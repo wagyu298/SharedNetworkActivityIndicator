@@ -7,7 +7,6 @@ If you set YES to NSObject.sna\_networkActivityIndicatorVisible;
 it will changed to invisible when you set NO to the property,
 or the lifecycle of the object was end.
 
-[![CI Status](http://img.shields.io/travis/wagyu298/SharedNetworkActivityIndicator.svg?style=flat)](https://travis-ci.org/wagyu298/SharedNetworkActivityIndicator)
 [![Version](https://img.shields.io/cocoapods/v/SharedNetworkActivityIndicator.svg?style=flat)](http://cocoapods.org/pods/SharedNetworkActivityIndicator)
 [![License](https://img.shields.io/cocoapods/l/SharedNetworkActivityIndicator.svg?style=flat)](http://cocoapods.org/pods/SharedNetworkActivityIndicator)
 [![Platform](https://img.shields.io/cocoapods/p/SharedNetworkActivityIndicator.svg?style=flat)](http://cocoapods.org/pods/SharedNetworkActivityIndicator)
