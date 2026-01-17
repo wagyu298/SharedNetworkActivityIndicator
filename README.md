@@ -17,7 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-iOS8 or later
+iOS12 or later
 
 ## Installation
 
@@ -25,7 +25,8 @@ SharedNetworkActivityIndicator is available through [CocoaPods](http://cocoapods
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SharedNetworkActivityIndicator"
+pod 'LiveObjectTracer', :git => 'https://github.com/wagyu298/LiveObjectTracer.git'
+pod 'SharedNetworkActivityIndicator', :git => 'https://github.com/wagyu298/SharedNetworkActivityIndicator.git'
 ```
 
 ## Author
