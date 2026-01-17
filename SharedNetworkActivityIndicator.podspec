@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SharedNetworkActivityIndicator'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Provide to ability to share Network Activiy Indicator by many objects.'
 
 # This description is used to generate tags and improve search results.
@@ -34,13 +34,13 @@ or the lifecycle of the object was end.
   s.source           = { :git => 'https://github.com/wagyu298/SharedNetworkActivityIndicator.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wagyu298'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'SharedNetworkActivityIndicator/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SharedNetworkActivityIndicator' => ['SharedNetworkActivityIndicator/Assets/*.png']
-  # }
+  s.source_files = 'SharedNetworkActivityIndicator/Classes/**/*.{h,m}'
+
+  s.resource_bundles = {
+    'SharedNetworkActivityIndicator' => ['SharedNetworkActivityIndicator/Classes/PrivacyInfo.xcprivacy']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

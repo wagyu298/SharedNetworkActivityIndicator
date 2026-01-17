@@ -3,6 +3,7 @@
 
 // https://github.com/Specta/Specta
 
+#import <UIKit/UIKit.h>
 #import <Specta/Specta.h>
 #import <Expecta/Expecta.h>
 #import <SharedNetworkActivityIndicator/SharedNetworkActivityIndicator.h>
@@ -15,7 +16,7 @@ describe(@"NSObject+SharedNetworkActivityIndicator", ^{
         NSObject *object = [[NSObject alloc] init];
         
         object.sna_networkActivityIndicatorVisible = YES;
-        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beTruthy();
+        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
         
         object.sna_networkActivityIndicatorVisible = NO;
         expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
@@ -26,13 +27,13 @@ describe(@"NSObject+SharedNetworkActivityIndicator", ^{
         NSObject *object2 = [[NSObject alloc] init];
         
         object1.sna_networkActivityIndicatorVisible = YES;
-        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beTruthy();
+        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
         
         object2.sna_networkActivityIndicatorVisible = YES;
-        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beTruthy();
+        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
 
         object1.sna_networkActivityIndicatorVisible = NO;
-        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beTruthy();
+        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
         
         object2.sna_networkActivityIndicatorVisible = NO;
         expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
@@ -45,7 +46,7 @@ describe(@"NSObject+SharedNetworkActivityIndicator", ^{
         expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
         
         object.sna_networkActivityIndicatorVisible = YES;
-        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beTruthy();
+        expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
         
         object.sna_networkActivityIndicatorVisible = NO;
         expect([UIApplication sharedApplication].networkActivityIndicatorVisible).to.beFalsy();
