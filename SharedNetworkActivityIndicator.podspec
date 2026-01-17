@@ -34,13 +34,13 @@ or the lifecycle of the object was end.
   s.source           = { :git => 'https://github.com/wagyu298/SharedNetworkActivityIndicator.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wagyu298'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'SharedNetworkActivityIndicator/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SharedNetworkActivityIndicator' => ['SharedNetworkActivityIndicator/Assets/*.png']
-  # }
+  s.source_files = 'SharedNetworkActivityIndicator/Classes/**/*.{h,m}'
+
+  s.resource_bundles = {
+    'SharedNetworkActivityIndicator' => ['SharedNetworkActivityIndicator/Classes/PrivacyInfo.xcprivacy']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
